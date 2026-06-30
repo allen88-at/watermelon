@@ -955,51 +955,51 @@ export const PAYMENT_PROVIDERS = [
 export const ARTICLES = [
     {
         id: 1,
-        slug: 'seo-workflow-keyword-strategy-long-tail-keywords-2026',
-        title: 'SEO Workflow, Keyword Strategy, and Long-Tail Keywords for 2026',
+        slug: 'philippines-football-guide-world-cup-2026',
+        title: 'Philippines Football: A Guide to the Sport and World Cup 2026',
         date: 'Jun 30, 2026',
-        category: 'Technology',
-        excerpt: 'Learn how to build an effective SEO workflow, choose the right keywords, and use long-tail and general keyword strategies to improve rankings and organic traffic.',
+        category: 'Sports',
+        excerpt: 'Learn about the Philippines football journey, World Cup 2026 excitement, and essential football training tips. Discover how to improve your game and support the national team.',
         image: '/images/article/article_2026_trends.webp',
         content: (
             <div className="space-y-8">
                 <section>
                     <div className="flex items-center gap-3 mb-4">
                         <div className="p-2 rounded-xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400">
-                            <Search size={24} />
+                            <Target size={24} />
                         </div>
-                        <h3 className="text-2xl font-bold text-slate-900 dark:text-white">SEO Workflow, Keyword Strategy, and Long-Tail Keywords for 2026</h3>
+                        <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Philippines Football: A Guide to the Sport and World Cup 2026</h3>
                     </div>
                     <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                        Search engine optimization is no longer just about stuffing a page with keywords. In 2026, successful SEO depends on a clear workflow, strong keyword research, helpful content, and continuous refinement. A modern strategy should balance general keywords with long-tail keywords, align content with search intent, and make sure every page is easy for both users and search engines to understand.
+                        Football is more than just a game—it's a universal language that connects millions of people around the world. For the Philippines, the sport continues to grow in popularity, with fans eagerly watching international tournaments and supporting their national team. As we approach the FIFA World Cup 2026, which will be co-hosted by the United States, Canada, and Mexico, there's never been a better time to learn about football, understand the beautiful game, and discover how you can improve your own skills on the pitch.
                     </p>
                 </section>
 
                 <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="p-6 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
-                        <div className="text-blue-600 mb-4"><BookOpen size={24} /></div>
-                        <h4 className="font-bold text-slate-900 dark:text-white mb-2">Research First</h4>
-                        <p className="text-slate-600 dark:text-slate-400 text-sm">Start with keyword research that identifies both broad terms and detailed queries your audience is already searching for.</p>
+                        <div className="text-blue-600 mb-4"><TrendingUp size={24} /></div>
+                        <h4 className="font-bold text-slate-900 dark:text-white mb-2">Growing Sport</h4>
+                        <p className="text-slate-600 dark:text-slate-400 text-sm">Football participation in the Philippines has grown significantly, with youth leagues and professional clubs expanding across the nation.</p>
                     </div>
                     <div className="p-6 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
-                        <div className="text-amber-600 mb-4"><Globe size={24} /></div>
-                        <h4 className="font-bold text-slate-900 dark:text-white mb-2">Optimize for Intent</h4>
-                        <p className="text-slate-600 dark:text-slate-400 text-sm">A strong SEO workflow maps each topic to the reason behind the search, whether the user wants information, comparison, or conversion.</p>
+                        <div className="text-amber-600 mb-4"><Trophy size={24} /></div>
+                        <h4 className="font-bold text-slate-900 dark:text-white mb-2">Regional Competitions</h4>
+                        <p className="text-slate-600 dark:text-slate-400 text-sm">The Philippine national team competes in AFC qualifiers and regional tournaments, striving for continental recognition.</p>
                     </div>
                     <div className="p-6 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
-                        <div className="text-green-600 mb-4"><Cpu size={24} /></div>
-                        <h4 className="font-bold text-slate-900 dark:text-white mb-2">Measure and Improve</h4>
-                        <p className="text-slate-600 dark:text-slate-400 text-sm">SEO performance should be reviewed regularly so content, structure, and technical elements continue to improve over time.</p>
+                        <div className="text-green-600 mb-4"><Heart size={24} /></div>
+                        <h4 className="font-bold text-slate-900 dark:text-white mb-2">Passionate Fans</h4>
+                        <p className="text-slate-600 dark:text-slate-400 text-sm">Filipino football fans are known for their passion, supporting the national team and watching the world's best players compete.</p>
                     </div>
                 </section>
 
                 <section className="bg-slate-50 dark:bg-slate-900/50 p-8 rounded-3xl border border-slate-100 dark:border-slate-800">
-                    <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-6">1. Build a Clear SEO Workflow</h4>
+                    <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-6">1. Understanding Football Basics</h4>
                     <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
-                        The foundation of any strong SEO strategy is a repeatable workflow. This starts with setting clear goals, understanding your target audience, and choosing the topics that matter most to your business. From there, you can move into keyword research, content planning, on-page optimization, technical SEO, and performance tracking. When each step is clearly defined, it becomes much easier to produce content that is both useful to readers and valuable to search engines.
+                        Football, or soccer as it's called in some countries, is a sport where two teams of eleven players each try to score goals by moving a ball into the opposing team's net. The game is played over 90 minutes, divided into two 45-minute halves. Understanding the basic rules, positions, and objectives is essential for anyone who wants to play or enjoy watching the sport.
                     </p>
                     <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                        A practical SEO workflow often includes research, planning, publishing, measuring, and improving. That means you are not only creating content once and forgetting about it, but continuously refining it based on rankings, engagement, and conversion data. The best results usually come from teams that treat SEO as an ongoing system rather than a one-time campaign.
+                        Key positions include goalkeepers, defenders, midfielders, and forwards. Each role has distinct responsibilities. The goalkeeper protects the net, defenders prevent opposing attacks, midfielders control the flow of the game, and forwards focus on scoring. Learning these positions helps you appreciate the tactical depth of football and understand why strategic formations matter so much.
                     </p>
                 </section>
 
@@ -1014,7 +1014,7 @@ export const ARTICLES = [
                 </section>
 
                 <section className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white p-8 rounded-3xl shadow-xl">
-                    <h4 className="text-2xl font-bold mb-4">3. Focus on Search Intent and Content Quality</h4>
+                    <h4 className="text-2xl font-bold mb-4">3. The Road to World Cup 2026</h4>
                     <p className="text-blue-50 leading-relaxed mb-4">
                         Search intent is one of the most important factors in modern SEO. If a user searches for “best SEO tools,” they may want a comparison article. If they search for “how to do keyword research,” they likely want a beginner-friendly guide. Understanding this intent helps you shape your content structure, tone, and calls to action. Good SEO content is not just optimized; it is genuinely useful, clear, and aligned with what the reader is trying to achieve.
                     </p>

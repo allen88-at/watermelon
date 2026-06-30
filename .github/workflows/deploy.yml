@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    name: 🚀 Deploy via SFTP
+    name: 🚀 Deploy via Standard FTP
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
@@ -24,13 +24,13 @@ jobs:
           npm ci
           npm run build
 
-      - name: 🛫 SFTP Deploy to Hostinger
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      - name: 🚀 Sync files to Hostinger via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
+          server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server: ${{ secrets.FTP_SERVER }}
-          port: 65002                         # 👈 精準指定 Hostinger 特殊埠號
-          local_path: './dist'          # 👈 修改：移除 '/*'，直接指向整個 dist 資料夾
-          remote_path: 'public_html'   # 👈 修改：結尾補上 '/'，強制指定它是一個目錄
-          sftp_only: true 
+          local-dir: ./dist/
+          server-dir: public_html/
+          port: 21                          # 👈 強制指定走標準網頁 21 埠
+          protocol: ftp                     # 👈 走普通明文/加密 FTP，穿透防火牆

@@ -1022,11 +1022,9 @@ export const ARTICLES = [
                 </section>
             </div>
         )
-    },
+},
     { 
         id: 2, 
-     { 
-        id: 1, 
         slug: 'understanding-online-casino-bonus-turnover-ph',
         title: 'Understanding Online Casino Bonus & Turnover in PH', 
         date: 'Jan 08, 2026', 
@@ -1150,11 +1148,7 @@ export const ARTICLES = [
         )
     },
     { 
-<<<<<<< HEAD
         id: 3, 
-=======
-        id: 2, 
->>>>>>> a1ebc0765d4af3097a63d73b87d12d93a72a25b4
         slug: 'mastering-super-ace-strategies-2026',
         title: 'Mastering Super Ace: Strategies for 2026', 
         date: 'Dec 08, 2025', 
@@ -1258,11 +1252,7 @@ export const ARTICLES = [
         )
     },
     { 
-<<<<<<< HEAD
         id: 4, 
-=======
-        id: 3, 
->>>>>>> a1ebc0765d4af3097a63d73b87d12d93a72a25b4
         slug: 'top-5-trusted-online-casinos-philippines-2026',
         title: 'Top 5 Trusted Online Casinos in the Philippines 2026', 
         date: 'Feb 15, 2026', 
@@ -1346,11 +1336,7 @@ export const ARTICLES = [
         )
     },
     { 
-<<<<<<< HEAD
         id: 5, 
-=======
-        id: 4, 
->>>>>>> a1ebc0765d4af3097a63d73b87d12d93a72a25b4
         slug: 'gcash-maya-ultimate-guide-fast-casino-payments',
         title: 'GCash & Maya: The Ultimate Guide to Fast Casino Payments', 
         date: 'Mar 01, 2026', 
@@ -1435,11 +1421,7 @@ export const ARTICLES = [
         )
     },
     { 
-<<<<<<< HEAD
         id: 6, 
-=======
-        id: 5, 
->>>>>>> a1ebc0765d4af3097a63d73b87d12d93a72a25b4
         slug: 'jili-slots-number-1-choice-filipino-players',
         title: 'JILI Slots: Why They Are the #1 Choice for Filipino Players', 
         date: 'Mar 10, 2026', 
@@ -1526,11 +1508,7 @@ export const ARTICLES = [
         )
     },
     { 
-<<<<<<< HEAD
         id: 7, 
-=======
-        id: 6, 
->>>>>>> a1ebc0765d4af3097a63d73b87d12d93a72a25b4
         slug: 'responsible-gaming-enjoy-online-casinos-safely',
         title: 'Responsible Gaming: How to Enjoy Online Casinos Safely', 
         date: 'Mar 15, 2026', 
@@ -1611,11 +1589,7 @@ export const ARTICLES = [
         )
     },
     { 
-<<<<<<< HEAD
         id: 8, 
-=======
-        id: 7, 
->>>>>>> a1ebc0765d4af3097a63d73b87d12d93a72a25b4
         slug: 'maximizing-vip-rewards-guide-high-rollers-ph',
         title: 'Maximizing VIP Rewards: A Guide for High Rollers in PH', 
         date: 'Mar 20, 2026', 

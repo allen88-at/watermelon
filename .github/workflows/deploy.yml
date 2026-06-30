@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  deploy:
+    name: 🚀 Deploy via SFTP
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
@@ -24,15 +24,13 @@ jobs:
           npm ci
           npm run build
 
-      - name: 🚀 Sync files to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: 🛫 SFTP Deploy to Hostinger
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
-          server-dir: /public_html/
-          # 👇 以下為新增的優化參數，專門解決 Hostinger 連線逾時問題
-          port: 21
-          protocol: ftp
-          timeout: 600000 # 延長逾時等待時間（毫秒）
+          server: ${{ secrets.FTP_SERVER }}
+          port: 65002                         # 👈 精準指定 Hostinger 特殊埠號
+          local_path: './dist/*'              # 👈 Vite 打包出來的網頁內容
+          remote_path: '/public_html'         # 👈 Hostinger 網站根目錄
+          sftp_only: true

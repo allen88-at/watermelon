@@ -32,3 +32,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: /public_html/
+          # 👇 以下為新增的優化參數，專門解決 Hostinger 連線逾時問題
+          port: 21
+          protocol: ftp
+          timeout: 600000 # 延長逾時等待時間（毫秒）

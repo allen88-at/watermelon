@@ -32,5 +32,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: public_html/
-          port: 21                          # 👈 強制指定走標準網頁 21 埠
-          protocol: ftp                     # 👈 走普通明文/加密 FTP，穿透防火牆
+          port: 21
+          protocol: ftp
+          timeout: 600000                 # 👈 給防火牆足夠的時間應答，防止連線被秒斷

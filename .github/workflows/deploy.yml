@@ -31,6 +31,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server: ${{ secrets.FTP_SERVER }}
           port: 65002                         # 👈 精準指定 Hostinger 特殊埠號
-          local_path: './dist/*'              # 👈 Vite 打包出來的網頁內容
-          remote_path: '/public_html'         # 👈 Hostinger 網站根目錄
-          sftp_only: true
+          local_path: './dist'          # 👈 修改：移除 '/*'，直接指向整個 dist 資料夾
+          remote_path: '/public_html/'   # 👈 修改：結尾補上 '/'，強制指定它是一個目錄
+          sftp_only: true 

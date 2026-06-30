@@ -3,31 +3,28 @@ name: Auto Build and Deploy to Hostinger
 on:
   push:
     branches:
-      - main # 當你 push 到 main 分支時，就會觸發自動更新
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    # 1. 複製 GitHub 上的程式碼到虛擬環境
     - name: Checkout code
       uses: actions/checkout@v4
 
-    # 2. 設定 Node.js 環境
+    # 這裡幫你強制改用 Node 24 順便消掉那個過期警告
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: 20
+        node-version: 24
         cache: 'npm'
 
-    # 3. 讓 GitHub 伺服器幫你安裝套件並打包（產生 dist）
     - name: Install dependencies and Build
       run: |
         npm install
         npm run build
 
-    # 4. 自動將打包好的 dist 內容上傳到 Hostinger
     - name: Deploy to Hostinger via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
@@ -35,5 +32,5 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
-        local-dir: ./dist/ # 本地打包出來的資料夾
-        server-dir: /public_html/ # Hostinger 的目標資料夾（若有子資料夾請自行修改，例如 /public_html/blog/）
+        local-dir: ./dist/
+        server-dir: /public_html/
